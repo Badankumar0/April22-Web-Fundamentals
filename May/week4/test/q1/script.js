@@ -13,7 +13,7 @@ console.log(Name);
 
 
 // const
-const e=2;
-const f=3;
+const a=2;
+const b=3;
 console.log("This is example of const");
-console.log(e+f);
+console.log(a+b);
