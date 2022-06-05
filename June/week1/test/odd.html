@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div class="container" style="text-align:center;">  
+        <h2>Q3:   Write a program to display the n terms of odd natural number and their sum.</h2>
+        <form>
+           Number : <input type="text" id="Number" /><br>
+            <input type="button" onClick="values()" Value="Cube" />
+        
+        </form>            
+            <p>The Result2 is : <br>
+            
+            <p id="result2"></p>
+            </p>
+    </div>
+<script>
+    function values()
+    {       let text=""; 
+            let sum = 0;           
+            num2 = document.getElementById("Number").value;            
+           for(let i=1; i<=num2; i++)
+                {    
+                    if(i%2 != 0)
+                            {
+                                sum += i;
+                                text += i + "+";
+                                
+                            }
+                }    
+             
+            document.getElementById("result2").innerHTML =text + " = " + sum;
+            
+    }
+</script>
+</body>
+</html>

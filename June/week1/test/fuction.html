@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>function.com</title>
+       <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<div class="container" style="background-color: rgb(197, 197, 217);">
+         <h3>Q1: In how many types can we create functions? State the difference between those types by giving examples</h3>
+        <p>Answer: 
+            <ul>
+                <li>Function Declarations</li>
+                <li>Function Expressions</li>
+                <li>Anonymous Functions</li>
+            </ul>
+        </p>
+    
+    <h3>Function Declaration</h3>
+        <p>A function declaration tells the JavaScript engine about a function’s name, return type, and parameters. When a function has been declared, it can be used anytime inside a class or development scope whenever it’s been called/invoked.</p>
+            <h5>Example:-</h5>
+            <pre>          
+                    function showMessage() {
+                    alert( 'Hello everyone!' );
+                    }
+                    showMessage();
+            </pre>
+    <h3>Function Expressioin</h3>
+    <p>JavaScript allows us to assign a function to a variable and then use that variable as a function. It is called function expression.</p>
+        <h5>Example:-</h5>
+            <pre>          
+                let x = function (num) { return num * num };
+                console.log(x(4));     
+            
+                let y = x(3);
+                console.log(y);
+            </pre>
+    <h3>3.Anonymous Function/Arrow Function</h3>
+        <p>JavaScript allows us to define a function without any name. This unnamed function is called anonymous function. Anonymous function must be assigned to a variable.</p>
+            <h5>Example:-</h5>
+            <pre>
+                let add = (a, b) => a + b; 
+                console.log(add(3, 2));
+            </pre>     
+</div>   
+</body>
+</html>
